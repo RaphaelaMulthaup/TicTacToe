@@ -12,31 +12,31 @@
     <h1>TIC TAC TOE</h1>
     <div class="aktivPlayer">
         <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="35" fill="transparent" stroke="#fff" stroke-width="7.4"/>
+            <circle id="circle" cx="50" cy="50" r="35" fill="transparent" stroke="#fff" stroke-width="7.4"/>
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" transform="rotate(45)">
-            <rect x="46.5" y="10" width="7" height="80" rx="3.5" ry="3.5" fill="#fff"/>
-            <rect x="10" y="46.5" width="80" height="7" rx="3.5" ry="3.5" fill="#fff"/>
+            <rect id="x1" x="46.5" y="10" width="7" height="80" rx="3.5" ry="3.5" fill="#efd8d2"/>
+            <rect id="x2" x="10" y="46.5" width="80" height="7" rx="3.5" ry="3.5" fill="#efd8d2"/>
         </svg>
     </div>
 
     <table>
         <tr>
-            <td id="td0"></td>
-            <td id="td1"></td>
-            <td id="td2"></td>
+            <td id="td0" onclick="render('td0', 0)"></td>
+            <td id="td1" onclick="render('td1', 1)"></td>
+            <td id="td2" onclick="render('td2', 2)"></td>
         </tr>
         <tr>
-            <td id="td3"></td>
-            <td id="td4"></td>
-            <td id="td5"></td>
+            <td id="td3" onclick="render('td3', 3)"></td>
+            <td id="td4" onclick="render('td4', 4)"></td>
+            <td id="td5" onclick="render('td5', 5)"></td>
         </tr>
         <tr>
-            <td id="td6"></td>
-            <td id="td7"></td>
-            <td id="td8"></td>
+            <td id="td6" onclick="render('td6', 6)"></td>
+            <td id="td7" onclick="render('td7', 7)"></td>
+            <td id="td8" onclick="render('td8', 8)"></td>
         </tr>
-            </table>
+    </table>
 
     
 </body>

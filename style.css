@@ -31,11 +31,15 @@ table {
 }
 
 td {
-    width: 100px;
-    height: 100px;
+    width: 105px;
+    height: 105px;
     border: 7px solid white;
     text-align: center;
     
+}
+
+td:hover {
+  background-color: #efd8d2;
 }
 
 table tr:first-child td {
