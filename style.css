@@ -1,60 +1,97 @@
 body {
-    background-color: #E9C8BF;
-    margin: 0; /* Kein Margin */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: <weight>; */
-    font-style: normal;
-    
+  background-color: #e9c8bf;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 h1 {
-    color: #515151; /* Dunkler Text */
-    font-size: 44px;
-    font-weight: 500;
+  color: #515151;
+  font-size: 44px;
+  font-weight: 500;
 }
 
 .aktivPlayer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 table {
-    border-collapse: collapse;
-    margin-top: 50px;
+  border-collapse: collapse;
+  margin-top: 50px;
 }
 
 td {
-    width: 105px;
-    height: 105px;
-    border: 7px solid white;
-    text-align: center;
-    
+  width: 105px;
+  height: 105px;
+  border: 7px solid white;
+  text-align: center;
 }
 
 td:hover {
   background-color: #efd8d2;
 }
 
+.tdHover:hover {
+  cursor: pointer;
+}
+
+#td0:hover {
+  border-radius: 30px 0 0 0;
+}
+
+#td2:hover {
+  border-radius: 0 30px 0 0;
+}
+
+#td8:hover {
+  border-radius: 0 0 30px 0;
+}
+
+#td6:hover {
+  border-radius: 0 0 0 30px;
+}
+
 table tr:first-child td {
-    border-top: none;
-    
-  }
+  border-top: none;
+}
 
-  table tr:last-child td {
-    border-bottom: none;
-  }
+table tr:last-child td {
+  border-bottom: none;
+}
 
-  table tr td:first-child {
-    border-left: none;
-  }
+table tr td:first-child {
+  border-left: none;
+}
 
-  table tr td:last-child {
-    border-right: none;
-  }
+table tr td:last-child {
+  border-right: none;
+}
+
+button {
+  background-color: #515151;
+  color: #e9c8bf;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #909090;
+}
+
+.divButton {
+  height: 42.5px;
+  margin-top: 30px;
+}
